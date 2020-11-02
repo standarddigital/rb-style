@@ -1,0 +1,79 @@
+require:
+  - rubocop-performance
+  - rubocop-minitest
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Layout/LineLength:
+   Enabled: true
+   Max: 80
+
+Documentation:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Lint/Loop:
+  Enabled: false
+
+Lint/MissingCopEnableDirective:
+  Enabled: false
+
+Lint/SuppressedException:
+  AllowComments: true
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - test/**/*
+
+Metrics/ClassLength:
+  Exclude:
+    - test/**/*.rb
+
+Metrics/MethodLength:
+  Enabled: true
+  CountAsOne: ['array', 'hash', 'heredoc']
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: nested
+  Exclude:
+    - test/**/*
+
+Style/MixinGrouping:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/OptionalBooleanParameter:
+  Enabled: true
+  Exclude:
+    - app/jobs/**/*.rb
+
