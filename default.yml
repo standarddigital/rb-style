@@ -2,11 +2,6 @@ require:
   - rubocop-performance
   - rubocop-minitest
 
-AllCops:
-  Exclude:
-    - 'node_modules/**/*'
-    - 'vendor/**/*'
-
 Layout/EmptyLinesAroundBlockBody:
   Enabled: false
 
