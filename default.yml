@@ -38,7 +38,8 @@ Metrics/MethodLength:
   CountAsOne: ['array', 'hash', 'heredoc']
 
 Style/StringLiterals:
-  Enabled: false
+  Enabled: true
+  EnforcedStyle: double_quotes
 
 Style/FrozenStringLiteralComment:
   Enabled: false
@@ -76,4 +77,3 @@ Style/OptionalBooleanParameter:
   Enabled: true
   Exclude:
     - app/jobs/**/*.rb
-
