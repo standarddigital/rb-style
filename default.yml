@@ -2,6 +2,9 @@ require:
   - rubocop-performance
   - rubocop-minitest
 
+Bundler/OrderedGems:
+  Enabled: true
+
 Layout/EmptyLinesAroundBlockBody:
   Enabled: false
 
